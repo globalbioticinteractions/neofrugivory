@@ -1,0 +1,244 @@
+{
+  "@context" : [ "http://www.w3.org/ns/csvw", {
+    "@language" : "en"
+  } ],
+  "rdfs:comment" : [ "inspired by https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/" ],
+  "tables" : [ {
+    "@context" : [ "http://www.w3.org/ns/csvw", {
+      "@language" : "en"
+    } ],
+    "rdfs:comment" : [ "inspired by https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/" ],
+    "url" : "Interactions.txt",
+    "dcterms:bibliographicCitation" : "@article{https://doi.org/10.1002/ecy.70049,\nauthor = {Fuzessy, Lisieux and Pizo, Marco Aurélio},\ntitle = {NeoFrugivory: A comprehensive database for frugivory interactions and functional traits in the Neotropics},\njournal = {Ecology},\nvolume = {106},\nnumber = {3},\npages = {e70049},\nkeywords = {frugivory, frugivory dataset, functional ecology, mutualism, plant traits, tropical ecology, vertebrate traits},\ndoi = {https://doi.org/10.1002/ecy.70049},\nurl = {https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1002/ecy.70049},\neprint = {https://esajournals.onlinelibrary.wiley.com/doi/pdf/10.1002/ecy.70049},\nyear = {2025}\n}\n",
+    "delimiter" : "\t",
+    "headerRowCount" : 1,
+    "interactionTypeName": "eats",
+    "interactionTypeId": "http://purl.obolibrary.org/obo/RO_0002470",
+    "null" : [ "" ],
+    "tableSchema" : {
+      "foreignKeys": [
+        {
+          "columnReference": "sourceTaxonId",
+          "reference": {
+            "columnReference": "sourceTaxonId"
+          }
+        },
+        {
+          "columnReference": "targetTaxonId",
+          "reference": {
+            "columnReference": "targetTaxonId"
+          }
+        },
+        {
+          "columnReference": "referenceId",
+          "reference": {
+            "columnReference": "referenceId"
+          }
+        }
+      ], 
+      "columns" : [ {
+        "name" : "referenceId",
+        "titles" : "Code",
+        "datatype" : "string"
+      }, {
+        "name" : "Study",
+        "titles" : "Study",
+        "datatype" : "string"
+      }, {
+        "name" : "Vertebrate_group",
+        "titles" : "Vertebrate_group",
+        "datatype" : "string"
+      }, {
+        "name" : "sourceTaxonId",
+        "titles" : "Animal_sp_paper",
+        "datatype" : "string"
+      }, {
+        "name" : "targetTaxonId",
+        "titles" : "Plant_sp_paper",
+        "datatype" : "string"
+      } ]
+    }
+  },
+  {
+    "@context" : [ "http://www.w3.org/ns/csvw", {
+      "@language" : "en"
+    } ],
+    "rdfs:comment" : [ "inspired by https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/" ],
+    "url" : "Vertebrates.txt",
+    "dcterms:bibliographicCitation" : "@article{https://doi.org/10.1002/ecy.70049,\nauthor = {Fuzessy, Lisieux and Pizo, Marco Aurélio},\ntitle = {NeoFrugivory: A comprehensive database for frugivory interactions and functional traits in the Neotropics},\njournal = {Ecology},\nvolume = {106},\nnumber = {3},\npages = {e70049},\nkeywords = {frugivory, frugivory dataset, functional ecology, mutualism, plant traits, tropical ecology, vertebrate traits},\ndoi = {https://doi.org/10.1002/ecy.70049},\nurl = {https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1002/ecy.70049},\neprint = {https://esajournals.onlinelibrary.wiley.com/doi/pdf/10.1002/ecy.70049},\nyear = {2025}\n}\n",
+    "delimiter" : "\t",
+    "headerRowCount" : 1,
+    "null" : [ "" ],
+    "tableSchema" : {
+      "primaryKey": "sourceTaxonId",
+      "columns" : [ {
+        "name" : "sourceTaxonId",
+        "titles" : "vertebrate_sp_paper",
+        "datatype" : "string"
+      }, {
+        "name" : "sourceTaxonName",
+        "titles" : "vertebrate_sp_current",
+        "datatype" : "string"
+      }, {
+        "name" : "sourceTaxonGenusName",
+        "titles" : "vertebrate_genus_current",
+        "datatype" : "string"
+      }, {
+        "name" : "sourceTaxonFamilyName",
+        "titles" : "vertebrate_family_current",
+        "datatype" : "string"
+      }, {
+        "name" : "body_size",
+        "titles" : "body_size",
+        "datatype" : "string"
+      }, {
+        "name" : "diet",
+        "titles" : "diet",
+        "datatype" : "string"
+      }, {
+        "name" : "vertebrate",
+        "titles" : "vertebrate",
+        "datatype" : "string"
+      } ]
+    }
+  },
+  {
+    "@context" : [ "http://www.w3.org/ns/csvw", {
+      "@language" : "en"
+    } ],
+    "rdfs:comment" : [ "inspired by https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/" ],
+    "url" : "Plants.txt",
+    "dcterms:bibliographicCitation" : "@article{https://doi.org/10.1002/ecy.70049,\nauthor = {Fuzessy, Lisieux and Pizo, Marco Aurélio},\ntitle = {NeoFrugivory: A comprehensive database for frugivory interactions and functional traits in the Neotropics},\njournal = {Ecology},\nvolume = {106},\nnumber = {3},\npages = {e70049},\nkeywords = {frugivory, frugivory dataset, functional ecology, mutualism, plant traits, tropical ecology, vertebrate traits},\ndoi = {https://doi.org/10.1002/ecy.70049},\nurl = {https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1002/ecy.70049},\neprint = {https://esajournals.onlinelibrary.wiley.com/doi/pdf/10.1002/ecy.70049},\nyear = {2025}\n}\n",
+    "delimiter" : "\t",
+    "headerRowCount" : 1,
+    "null" : [ "" ],
+    "tableSchema" : {
+      "primaryKey": "targetTaxonId",
+      "columns" : [ {
+        "name" : "targetTaxonId",
+        "titles" : "Plant_sp_paper",
+        "datatype" : "string"
+      }, {
+        "name" : "Plant_name_accepted",
+        "titles" : "Plant_name_accepted",
+        "datatype" : "string"
+      }, {
+        "name" : "targetTaxonName",
+        "titles" : "Plant_sp_current",
+        "datatype" : "string"
+      }, {
+        "name" : "targetTaxonGenusName",
+        "titles" : "Plant_genus_current",
+        "datatype" : "string"
+      }, {
+        "name" : "targetTaxonFamilyName",
+        "titles" : "Plant_family_current",
+        "datatype" : "string"
+      }, {
+        "name" : "life_form",
+        "titles" : "life_form",
+        "datatype" : "string"
+      }, {
+        "name" : "fruit_type",
+        "titles" : "fruit_type",
+        "datatype" : "string"
+      }, {
+        "name" : "husk",
+        "titles" : "husk",
+        "datatype" : "string"
+      }, {
+        "name" : "color",
+        "titles" : "color",
+        "datatype" : "string"
+      }, {
+        "name" : "color_code",
+        "titles" : "color_code",
+        "datatype" : "string"
+      }, {
+        "name" : "fruit_le_cm",
+        "titles" : "fruit_le_cm",
+        "datatype" : "string"
+      }, {
+        "name" : "fruit_wd_cm",
+        "titles" : "fruit_wd_cm",
+        "datatype" : "string"
+      }, {
+        "name" : "seed_le_cm",
+        "titles" : "seed_le_cm",
+        "datatype" : "string"
+      }, {
+        "name" : "seed_wd_cm",
+        "titles" : "seed_wd_cm",
+        "datatype" : "string"
+      }, {
+        "name" : "seed_diam_cm",
+        "titles" : "seed_diam_cm",
+        "datatype" : "string"
+      }, {
+        "name" : "n_seeds",
+        "titles" : "n_seeds",
+        "datatype" : "string"
+      } ]
+    }
+  },
+  {
+    "@context" : [ "http://www.w3.org/ns/csvw", {
+      "@language" : "en"
+    } ],
+    "rdfs:comment" : [ "inspired by https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/" ],
+    "url" : "References.txt",
+    "dcterms:bibliographicCitation" : "@article{https://doi.org/10.1002/ecy.70049,\nauthor = {Fuzessy, Lisieux and Pizo, Marco Aurélio},\ntitle = {NeoFrugivory: A comprehensive database for frugivory interactions and functional traits in the Neotropics},\njournal = {Ecology},\nvolume = {106},\nnumber = {3},\npages = {e70049},\nkeywords = {frugivory, frugivory dataset, functional ecology, mutualism, plant traits, tropical ecology, vertebrate traits},\ndoi = {https://doi.org/10.1002/ecy.70049},\nurl = {https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1002/ecy.70049},\neprint = {https://esajournals.onlinelibrary.wiley.com/doi/pdf/10.1002/ecy.70049},\nyear = {2025}\n}\n",
+    "delimiter" : "\t",
+    "headerRowCount" : 1,
+    "null" : [ "" ],
+    "tableSchema" : {
+      "primaryKey": "referenceId",
+      "columns" : [ {
+        "name" : "referenceId",
+        "titles" : "Code",
+        "datatype" : "string"
+      }, {
+        "name" : "title",
+        "titles" : "Title",
+        "datatype" : "string"
+      }, {
+        "name" : "Vertebrate_group",
+        "titles" : "Vertebrate_group",
+        "datatype" : "string"
+      }, {
+        "name" : "author",
+        "titles" : "Authors",
+        "datatype" : "string"
+      }, {
+        "name" : "year",
+        "titles" : "Year",
+        "datatype" : "string"
+      }, {
+        "name" : "Source",
+        "titles" : "Source",
+        "datatype" : "string"
+      }, {
+        "name" : "Site",
+        "titles" : "Site",
+        "datatype" : "string"
+      }, {
+        "name" : "localityName",
+        "titles" : "Country",
+        "datatype" : "string"
+      }, {
+        "name" : "decimalLongitude",
+        "titles" : "Longitude",
+        "datatype" : "string"
+      }, {
+        "name" : "decimalLatitude",
+        "titles" : "Latitude",
+        "datatype" : "string"
+      }, {
+        "name" : "Dec_degrees",
+        "titles" : "Dec_degrees",
+        "datatype" : "string"
+      } ]
+    }
+  }  
+   ]
+}
