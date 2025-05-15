@@ -76,7 +76,7 @@
         "titles" : "vertebrate_sp_paper",
         "datatype" : "string"
       }, {
-        "name" : "sourceTaxonName",
+        "name" : "sourceTaxonSpeciesName",
         "titles" : "vertebrate_sp_current",
         "datatype" : "string"
       }, {
@@ -123,7 +123,7 @@
         "titles" : "Plant_name_accepted",
         "datatype" : "string"
       }, {
-        "name" : "targetTaxonName",
+        "name" : "targetTaxonSpeciesName",
         "titles" : "Plant_sp_current",
         "datatype" : "string"
       }, {
