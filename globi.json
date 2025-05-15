@@ -119,11 +119,11 @@
         "titles" : "Plant_sp_paper",
         "datatype" : "string"
       }, {
-        "name" : "Plant_name_accepted",
+        "name" : "targetTaxonSpeciesName",
         "titles" : "Plant_name_accepted",
         "datatype" : "string"
       }, {
-        "name" : "targetTaxonSpeciesName",
+        "name" : "Plant_sp_current",
         "titles" : "Plant_sp_current",
         "datatype" : "string"
       }, {
